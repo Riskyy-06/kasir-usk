@@ -38,7 +38,7 @@ class CategoryController extends Controller
 
             return redirect()->route('categories.index')->with('success', 'Kategori berhasil ditambahkan.');
         } catch (\Exception $e) {
-            // Jika terjadi error selain validasi, redirect kembali dengan pesan error
+           
             return redirect()->back()->withInput()->with('error', 'Terjadi kesalahan saat menyimpan kategori. Silakan coba lagi.');
         }
     }

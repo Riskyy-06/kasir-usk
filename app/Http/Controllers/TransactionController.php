@@ -56,7 +56,7 @@ class TransactionController extends Controller
                     'price' => $item->price,
                 ]);
 
-                // Kurangi stok item
+              
                 $item->decrement('stock', $itemData['quantity']);
             }
 
